@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><fieldset>
+        <center>
+        <h2>Registration Form</h2>
+        <form action="../day4-forms/regres.html" method="post">
+                        <label for="first">First Name:</label><br>
+                        <input type="text" id="first"  name="first" required/><br>
+
+            <label for="last">Last Name:</label><br>
+            <input type="text" id="last" name="last" required/><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" pattern="[a-z\d._]+\@[a-z]+\.[a-z]{2,}" title="" required><br>
+            <label for="date">Date  Of Birth</label><br>
+            <input type="text" id="date" name="date" pattern="\d{2}-\d{2}-\d{4}">
+            <br>
+            <label for="password"
+                >Password:</label><br>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                pattern="(?=.*[a-zA-Z])(?=.*\d)(?=.*[@#%&]).{8,16}"
+                title="Password must contain at least one number, 
+                       one alphabet, one symbol, and be at 
+                       least 8 characters long"
+                required/><br>
+
+          
+            <label for="mobile">Contact:</label><br>
+            <input
+                type="text"
+                id="mobile"
+                name="mobile"
+                maxlength="10"
+                pattern="\+91[6-9]\d{9}"
+                required /><br>
+
+            <label for="gender"
+                >Gender:</label><br>
+            <select
+                id="gender"
+                name="gender"
+                required>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+                <option value="other">
+                    Other
+                </option>
+            </select><br>
+
+            
+            <label for="address"
+                >Address:</label><br>
+            <select
+                id="address"
+                name="address"
+                required autocomplete="off">
+                <option  value="AP">
+                    Andhra Pradesh
+                </option>
+                <option value="TS">
+                    Hyderabad
+                </option>
+                <option value="KL">
+                    kerala
+                </option>
+            </select><br>
+
+            <input type="submit">
+
+            
+        </form>
+    </center>
+    </fieldset>
+    </div>
+    
+</body>
+</html>
